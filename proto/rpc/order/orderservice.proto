@@ -2,9 +2,10 @@ syntax="proto3";
 
 package rpc.order;
 
-import "order.proto";
-
 option go_package = "github.com/schemas/build/go/rpc/order";
+
+import "rpc/order/order.proto";
+
 
 //OrderService is the service that place an order
 service OrderService {
