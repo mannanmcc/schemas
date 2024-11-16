@@ -3,5 +3,5 @@
 Install protoc:
 $ brew install protobuf
 Generate protobuf
-$ protoc -I=proto --go_out=build proto/rpc/order/*.proto
-$ protoc -I=proto proto/rpc/order/*.proto --go-grpc_out=build
+$ protoc --proto_path=proto --go_out=build --go_opt=paths=source_relative proto/rpc/order/*.proto
+$ protoc --proto_path=proto --go-grpc_out=build --go-grpc_opt=paths=source_relative proto/rpc/order/*.proto
