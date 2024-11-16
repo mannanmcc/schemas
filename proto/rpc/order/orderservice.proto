@@ -2,7 +2,7 @@ syntax="proto3";
 
 package rpc.order;
 
-option go_package = "github.com/schemas/build/go/rpc/order";
+option go_package = "github.com/mannanmcc/schemas/build/go/rpc/order";
 
 import "rpc/order/order.proto";
 
