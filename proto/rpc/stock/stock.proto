@@ -1,0 +1,19 @@
+syntax="proto3";
+
+package rpc.stock;
+
+option go_package = "github.com/mannanmcc/schemas/build/go/rpc/stock";
+
+//CheckStockRequest define the CheckStock request structure
+message CheckStockRequest {
+  int32 product_id = 1;
+}
+
+
+//CheckStockResponse define the CheckStock response structure
+message CheckStockResponse {
+    int32 product_id = 1;
+    int32 quantity_available = 2;
+    int32 quantity_original = 3;
+}
+

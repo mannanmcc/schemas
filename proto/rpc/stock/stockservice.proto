@@ -1,0 +1,13 @@
+syntax="proto3";
+
+package rpc.stock;
+
+option go_package = "github.com/mannanmcc/schemas/build/go/rpc/stock";
+
+import "rpc/stock/stock.proto";
+
+
+//OrderService is the service that place an order
+service CheckService {
+  rpc CheckStock(CheckStockRequest) returns (CheckStockResponse);
+}
